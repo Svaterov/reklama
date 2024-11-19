@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: rgb(249, 225, 255);
+}
+
+.sidebar {
+    width: 100px; /* Начальная ширина меню */
+    height: 100vh; /* Высота меню на всю высоту окна */
+    background-color: #b379be;
+    overflow: hidden; /* Скрытие содержимого, выходящего за границы */
+    transition: width 1s; /* Плавное изменение ширины */
+}
+
+.sidebar:hover {
+    width: 200px; /* Полная ширина при наведении */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s; /* Плавное изменение фона при наведении */
+}
+
+.menu li:hover {
+    background-color:  #9b6aa5; /* Более темный фон при наведении на элемент меню */
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1; /* Занимает оставшееся пространство */
+}
+
