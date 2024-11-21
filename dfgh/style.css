@@ -1,46 +1,47 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: aquamarine;
+    background-color: #f4f4f4;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
 .background {
-    position: fixed;
+    position: fixed; /* Фиксируем фон */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url();
+    background-image: url('images/Background.png');
     background-size: cover;
-    background-position: center ;
-    z-index: -1;
+    background-position: center;
+    z-index: -1; /* Помещаем фон под контент */
 }
 
 .quiz-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: cornflowerblue;
+    background-color: #12702e69;
     max-width: 500px;
     margin: 50px auto;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(red, green, blue, alpha);
-    transition: transform 0.3s, box-shadow 0.3s ;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+
 h1 {
-    font-size: 26 px ;
-    color: brown;
+    font-size: 26px;
+    color: #3a2323d7;
     margin-bottom: 20px;
 }
 
 #question {
-    font-size: 20px ;
-    margin-top: 20 px;
-    color: darkblue;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #555;
 }
 
 #question-image {
@@ -56,4 +57,26 @@ h1 {
     margin-top: 20px;
 }
 
-button
+button {
+    background-color: #661a6dcb;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#next-button {
+    background-color: #484792b6;
+}
+
+#next-button:hover {
+    background-color: #00ff2280;
+}
