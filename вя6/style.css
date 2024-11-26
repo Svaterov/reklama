@@ -8,9 +8,9 @@ body {
 .container {
     max-width: 800px;
     margin: auto;
-    background-color: #fff;
+    background-color: #8eacffb7;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(21, 255, 0, 0.1);
     padding: 20px;
 }
 
@@ -46,7 +46,7 @@ img {
 figcaption {
     margin-top: 5px;
     font-size: 0.9em;
-    color: #555;
+    color: #790079;
 }
 
 /* Стили для мобильных устройств */
